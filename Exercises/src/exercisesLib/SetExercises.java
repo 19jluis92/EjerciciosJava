@@ -13,12 +13,12 @@ public class SetExercises {
          *  - You can assume that the existing Players have ranks from 1 to N (size of set) with no gaps
          * */
 
-        public static void main(String[] args) {
-            SetExercises rankChallenge = new SetExercises();
-            rankChallenge.run();
+      /*  public static void main(String[] args) {
+            //SetExercises rankChallenge = new SetExercises();
+           // rankChallenge.run();
 
 
-        }
+        }*/
 
         private void run(){
 

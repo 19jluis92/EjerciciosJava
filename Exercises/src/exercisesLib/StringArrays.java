@@ -31,6 +31,7 @@ public class StringArrays {
         return anagramas.values().stream().map(x -> new ArrayList<>(x)).collect(Collectors.toList());
     }
 
+
         /*public static void main(String... args){
         Solution sol = new Solution();
         String []arg = {"eat","tea","tan","ate","nat","bat"};
