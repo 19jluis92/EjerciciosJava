@@ -1,9 +1,15 @@
-package exercisesLib;
+package com.example.java.general;
 
 import java.util.HashSet;
 import java.util.Set;
+import java.util.TreeSet;
 
-public class SetExercises {
+public class TreeSetExercises {
+
+
+
+
+
 
         /**
          * Problem:
@@ -13,25 +19,23 @@ public class SetExercises {
          *  - You can assume that the existing Players have ranks from 1 to N (size of set) with no gaps
          * */
 
-      /*  public static void main(String[] args) {
-            //SetExercises rankChallenge = new SetExercises();
-           // rankChallenge.run();
+        public static void main_1(String[] args) {
+            TreeSetExercises rankChallenge = new TreeSetExercises();
+            rankChallenge.run();
 
 
-        }*/
+        }
 
         private void run(){
 
-            Set<Player> existingPlayers = new HashSet<>();
-            Player p = new Player(1, "Charlie");
-            existingPlayers.add(p);
-            existingPlayers.add(p);
+            Set<Player> existingPlayers = new TreeSet<>();
+            existingPlayers.add(new Player(1, "Charlie"));
             existingPlayers.add(new Player(2, "Alice"));
             existingPlayers.add(new Player(3, "Steve"));
             existingPlayers.add(new Player(4, "Sally"));
             existingPlayers.add(new Player(5, "Jack"));
 
-            addPlayer(existingPlayers, new Player(3, "Kelly"));
+            addPlayer(existingPlayers, new Player(6, "Kelly"));
             for (Player player :  existingPlayers) {
                 System.out.println(player.rank+"   xx:  "+player.name);
             }
@@ -51,7 +55,7 @@ public class SetExercises {
         }
 
 
-        class Player {
+        class Player implements Comparable<Player>{
 
             int rank;
             String name;
@@ -69,7 +73,38 @@ public class SetExercises {
                 this.rank = newRank;
             }
 
+            public int compare(Player p1, Player p2){
 
+                if(p1.rank > p2.rank)
+                {
+                    return 1;
+                }
+                else if(p1.rank < p2.rank)
+                {
+                    return -1;
+                }
+                else{
+                    return 0;
+                }
+
+            }
+
+            @Override
+            public int compareTo(Player p2) {
+                if(rank > p2.rank)
+                {
+                    return 1;
+                }
+                else if(rank < p2.rank)
+                {
+                    return -1;
+                }
+                else{
+                    return 0;
+                }
+            }
         }
-}
+    }
+
+
 

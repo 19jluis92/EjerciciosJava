@@ -1,4 +1,4 @@
-package exercisesLib;
+package com.example.java.general;
 
 /**
  * Definition for singly-linked list.

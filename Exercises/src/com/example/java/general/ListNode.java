@@ -1,4 +1,4 @@
-package exercisesLib;
+package com.example.java.general;
 
 public class ListNode {
     int val;
