@@ -1,4 +1,4 @@
-package com.example.java.general;
+package example.java.general;
 
 public class Search {
 

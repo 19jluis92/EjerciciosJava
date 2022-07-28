@@ -1,4 +1,4 @@
-package com.example.java.general;
+package example.java.general;
 
 /**
  * Definition for singly-linked list.
@@ -39,5 +39,6 @@ public class LinkedListExercise {
 
         LinkedListExercise listexercise = new LinkedListExercise();
         listexercise.addTwoNumbers(l1,l2);
+        System.out.println("yolo");
     }
 }
