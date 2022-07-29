@@ -1,4 +1,4 @@
-package exercisesLib;
+package example.java.general;
 
 /**
  * Definition for singly-linked list.
@@ -32,12 +32,13 @@ public class LinkedListExercise {
         return l1;
     }
 
-    public static void main(String[] args) {
+    public static void main_(String[] args) {
 
         ListNode l1 = new ListNode(7,new ListNode(2,new ListNode(4,new ListNode(3))));
         ListNode l2 = new ListNode(5,new ListNode(6,new ListNode(4)));
 
         LinkedListExercise listexercise = new LinkedListExercise();
         listexercise.addTwoNumbers(l1,l2);
+        System.out.println("yolo");
     }
 }

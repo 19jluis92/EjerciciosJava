@@ -1,1 +1,5 @@
 /Exercises/bin/
+/Exercises/target/
+
+*.class
+*.jar

@@ -1,4 +1,4 @@
-package exercisesLib;
+package example.java.general;
 
 import java.util.HashSet;
 import java.util.Set;
